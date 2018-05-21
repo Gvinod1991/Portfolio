@@ -10,9 +10,9 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,Row } from 'reactstrap';
+  DropdownItem,Row,Col } from 'reactstrap';
 import logo from './logo.svg';
-import axios from 'axios';
+//import axios from 'axios';
 
 class App extends Component {
  
@@ -33,14 +33,10 @@ class App extends Component {
     var  home_url="#";
 
     return (
-      /*<div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-      </div>*/
-      <div>
-        <Container>
+        <Container className="container-fluid">
+        <Row>
+          <Col lg="4">.col</Col>
+          <Col lg="8">
         <Navbar color="faded" light>
           <NavbarBrand href="/" className="mr-auto"> <img src={logo} className="App-logo" alt="logo" /></NavbarBrand>
           
@@ -51,7 +47,7 @@ class App extends Component {
                 <NavLink href={home_url}><i className="fa fa-home"></i> Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#"><i className="fa fa-user-envelope"></i> Contact</NavLink>
+                <NavLink href="#"><i className="fa fa-envelope"></i> Contact</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#"><i className="fa fa-info"></i> About</NavLink>
@@ -59,11 +55,16 @@ class App extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-        
+        </Col>
+        </Row>
         </Container>
-      </div>
     );
   }
+  
+}
+Container.propTypes = {
+  fluid:  PropTypes.bool
+  // applies .container-fluid class
 }
 
 export default App;
