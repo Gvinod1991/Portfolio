@@ -11,7 +11,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,Row } from 'reactstrap';
+  DropdownItem,Row,Col } from 'reactstrap';
 import logo from './logo.svg';
 //import axios from 'axios';
 
@@ -68,6 +68,11 @@ class App extends Component {
         </Container>
     );
   }
+  
+}
+Container.propTypes = {
+  fluid:  PropTypes.bool
+  // applies .container-fluid class
 }
 
 export default App;
