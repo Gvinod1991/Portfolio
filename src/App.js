@@ -12,7 +12,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,Row,Col } from 'reactstrap';
-import logo from './logo.svg';
+import logo from './logo.png';
 //import axios from 'axios';
 
 class App extends Component {
@@ -37,33 +37,36 @@ class App extends Component {
       
         <Container fluid>
           <div className="header">
-            
-            <Navbar color="faded" light>
             <div className="mr-auto">
               <img src={logo} className="App-logo" alt="logo" />
             </div>
-            <NavbarToggler onClick={this.toggleNavbar} className="hidden-md-up mr-2" />
-            <Collapse isOpen={!this.state.collapsed} navbar>
-              <Nav navbar>
-                <NavItem>
-                  <NavLink href={home_url}><i className="fa fa-home"></i> Home</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#"><i className="fa fa-envelope"></i> Contact</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#"><i className="fa fa-info"></i> About</NavLink>
-                </NavItem>
-           </Nav>
-            </Collapse>
-          </Navbar>
           <ul className="menu">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/portfolio">Portfolio</a></li>
             <li><a href="/contact">Kontakt</a></li>
           </ul>
+          <div className="footer">
+            <ul>
+              <li><a href=""><i className="fa fa-facebook"></i></a></li>
+              <li><a href=""><i className="fa fa-twitter"></i></a></li>
+              <li><a href=""><i className="fa fa-linkedin"></i></a></li>
+              <li><a href=""><i className="fa fa-stack-overflow"></i></a></li>
+              <li><a href=""><i className="fa fa-free-code-camp"></i></a></li>
+              <li><a href=""><i className="fa fa-codepen"></i></a></li>
+              <li><a href=""><i className="fa fa-github"></i></a></li>
+            </ul>
           </div>
+
+          </div>
+          <div className="wrapper">
+            <Row>
+            <p>This is body</p>
+            </Row>
+
+          </div>
+
+
           
         </Container>
     );

@@ -1,4 +1,5 @@
 @import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
 .App {
   text-align: center;
 }
@@ -23,20 +24,43 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+/*@keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+}*/
 .header{
   top:0;
-  left:0;
+  left:0px;
   position:fixed;
-  width:300px;
+  width:25%;
   height:100%;
   background:#f5f5f5;
+  text-align:center;
 }
-.menu ul li{
+.menu li{
    padding:10px;
    list-style-type: none!important;
+}
+.menu li a:hover{
+  border-bottom:2px solid #33acff;
+  text-decoration: none;
+  
+
+}
+.footer {
+  position: absolute;
+  bottom:0;
+}
+.footer ul li{
+  
+  list-style: none;
+  display:inline;
+  padding:8px;
+  font-size:24px;
+  
+}
+.wrapper{
+  /*position: relative;*/
+ 
 
 }
