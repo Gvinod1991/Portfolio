@@ -9,7 +9,44 @@ class Contact extends Component {
       
           <div className="wrapper">
             <Row>
-            <p>This is Contact</p>
+            <div className="container content">
+                <div className="sectionTitle ">
+                   <h3>Contact</h3>
+                </div>
+                <div className="col-md-12 col-sm-12 col-xs-12 top">
+                   Feel free to contact me. 
+                </div>
+                <div className="col-md-12 col-sm-4  col-xs-12 contact">
+                <ul >
+                    <li><a href=""><i className="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i className="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i className="fa fa-linkedin"></i></a></li>
+                    <li><a href=""><i className="fa fa-stack-overflow"></i></a></li>
+                    <li><a href=""><i className="fa fa-free-code-camp"></i></a></li>
+                    <li><a href=""><i className="fa fa-codepen"></i></a></li>
+                    <li><a href=""><i className="fa fa-github"></i></a></li>
+                  </ul>
+                  <form>
+                    <div class="form-group">
+                    <input   class="form-control input-lg text"  type="text" name="username" placeholder="your name" required/><p class="text_validity"></p>
+                    
+                    </div>
+                    <div class="form-group">
+                    <input class="form-control input-lg" type="email" name="emailid" placeholder="your email id" required/>
+                    
+                    </div>
+                    <div class="form-group">
+                    <input id="subject" class="form-control input-lg" type="text" name="subject" placeholder=" subject" required/><p class="subject_validity"></p>
+                    </div>
+                    <div class="form-group">
+                    <textarea   rows="7"  cols="5" class="form-control" placeholder="Message" required></textarea><p class="TextArea"></p>
+                    </div>
+                    
+                    <button   class="btn btn-lg btn-secondary pull-right"  type="submit" > <i class="fa fa-paper-plane"></i> Send </button>
+                    
+                  </form>
+                </div>
+            </div>   
             </Row>
 
           </div>

@@ -40,12 +40,15 @@
 .menu li{
    padding:10px;
    list-style-type: none!important;
+   text-transform: uppercase;
+  
+}
+.menu li a{
+  color:#6c757d;
 }
 .menu li a:hover{
-  border-bottom:2px solid #33acff;
+  border-bottom:2px solid #161616;
   text-decoration: none;
-  
-
 }
 .footer {
   position: absolute;
@@ -59,6 +62,30 @@
   font-size:24px;
   
 }
+.footer ul li a{
+  color:#6c757d!important;
+}
 .wrapper{
   /*position: relative;*/
+}
+.sectionTitle{
+
+  padding-top:100px;
+  font-size:25px;
+  border-bottom:1px dashed #b1b1b1;
+  text-transform: uppercase;
+}
+.top{
+padding-top:15px;
+}
+.contact ul li{
+  display:inline-block;
+  list-style:none;
+  padding:30px;
+  font-size:48px;
+  
+
+}
+.contact ul li a{
+  color:#6c757d!important;
 }

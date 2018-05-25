@@ -8,8 +8,8 @@ const Header = () => {
             </div>
           <ul className="menu">
             <li><a href="/">About</a></li>
-            <li><a href="/work">Work</a></li>
-            <li><a href="/contact">Kontakt</a></li>
+            <li><a href="/work">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
           <div className="footer">
             <ul>
