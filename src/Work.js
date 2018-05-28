@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Row,Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle,Button,Col } from 'reactstrap';
-
+import es6 from './es6.png';
 class Work extends Component {
 
   render() {
@@ -21,32 +21,37 @@ class Work extends Component {
                 <Col >
                 <Card>
                    <CardBody>
-                    <CardTitle>QuoteMachine</CardTitle>
-                    <CardSubtitle>App to display the random quotes when user wants see.</CardSubtitle>
+                   <CardImg top width="100%" src={es6} alt="Card image cap" />
+                    <CardTitle className="text-center">QuoteMachine</CardTitle>
                     
-                    <Button>View Source</Button> 
-                    <Button> View Demo</Button>
+                    <CardText>App to display the random quotes when user wants see.</CardText>
+                    <Button> View Source </Button>
+                    
                   </CardBody>
                 </Card>
                 </Col>
                 <Col >
                 <Card>
                    <CardBody>
-                    <CardTitle>Weather-App</CardTitle>
-                    <CardSubtitle>This app will show the whether condition(only temprature) based on it's location.</CardSubtitle>
+                   <CardImg top width="100%" src={es6} alt="Card image cap" />
+        
+                    <CardTitle className="text-center">Weather-App</CardTitle>
+                    
+                    <CardText >This app will show the whether condition(only temprature) based on it's location.</CardText>
                     
                     <Button>View Source</Button> 
-                    <Button> View Demo</Button>
+                    
                   </CardBody>
                 </Card>
                 </Col >
                 <Col >
                 <Card>
                    <CardBody>
-                    <CardTitle>PhpQueryBuilder</CardTitle>
-                    <CardSubtitle>It simply buids the quries in mysql.</CardSubtitle>
+                   <CardImg top width="100%" src={es6} alt="Card image cap" />
+                    <CardTitle className="text-center">PhpQueryBuilder</CardTitle>
+                    <CardText>It simply buids the quries in mysql.</CardText>
                     <Button>View Source</Button> 
-                    <Button> View Demo</Button>
+                    
                   </CardBody>
                 </Card>
                 </Col >
