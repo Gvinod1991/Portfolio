@@ -1,4 +1,5 @@
 import React from 'react';
+import hotel from '../hotel.jpg';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import classnames from 'classnames';
@@ -57,6 +58,8 @@ const styles = theme => ({
       const { classes } = this.props;
   
       return (
+        <div>
+          <div ><h2 style={{textAlign:'center',fontSize:25,borderBottomWidth:2,borderBottomColor:'#ccc'}}>Projects</h2></div>
         <Card className={classes.card}>
           <CardHeader
             avatar={
@@ -74,7 +77,7 @@ const styles = theme => ({
           />
           <CardMedia
             className={classes.media}
-            image="/static/images/cards/paella.jpg"
+            image={hotel}
             title="Contemplative Reptile"
           />
           <CardContent>
@@ -131,6 +134,7 @@ const styles = theme => ({
             </CardContent>
           </Collapse>
         </Card>
+        </div>
       );
     }
   }
