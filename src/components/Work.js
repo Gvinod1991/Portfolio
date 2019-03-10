@@ -41,7 +41,7 @@ import bj_app from '../img/bj_app.png';
               <CardImg top width="100%" src={BJ_be} alt="Card image cap" />
               <CardBody>
                 <CardTitle><h2>Booking Engine Panel of Bookingjini</h2></CardTitle>
-                <CardText style={{fontSize:14}}>Customer hotel bookings engiene to book the hotels directly from hotel's website.</CardText>
+                <CardText style={{fontSize:14}}>Customer hotel bookings engine to book the rooms directly from hotel's website.</CardText>
                 <Row>
                 <Col md="4"></Col>
                   <Col md="4">
@@ -90,7 +90,7 @@ import bj_app from '../img/bj_app.png';
             <Card>
               <CardImg top width="100%" src={mystyle_app} alt="Card image cap" />
               <CardBody>
-                <CardTitle><h2>Mobile App MyStle </h2></CardTitle>
+                <CardTitle><h2>Mobile App MyStyle </h2></CardTitle>
                 <br/>
                 <CardText style={{fontSize:14}}>App to to book the nearest salon services in the their area.</CardText>
                 <Row>
