@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './components/About';
@@ -15,7 +15,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div style={{paddingTop:70}}> 
+      <div> 
 			  <Header/>
 				<Router>
 					<Switch>

@@ -1,41 +1,46 @@
 import React from 'react';
-const Header = () => {
-    return <header>
-        <nav className="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
-        <div className="container-fluid">
-            <div className="navbar-header">
-                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                    <span className="sr-only">Toggle navigation</span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                </button>
-                <a className="navbar-brand" id="green-terminal" href="/">Kod3r@kod3r-dev ~ $</a>
-            </div>
-
-            
-            <div className="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul className="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">/home/kod3r</a>
-                    </li>
-                    <li className="dropdown">
-                        
-                        <a href="/projects">~/projects</a>
-                        
-                    </li>
-                    <li className="dropdown">
-                        <a href="/blogs">~/blogs</a>
-                        
-                    </li>
-                    
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-    </header>
-};
-
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink } from 'reactstrap';
+  
+class Header extends React.Component{
+    constructor(props) {
+        super(props);
+    
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+          isOpen: false
+        };
+      }
+      toggle() {
+        this.setState({
+          isOpen: !this.state.isOpen
+        });
+      }
+    render(){
+    return(<div>
+       <Navbar style ={{borderRadius:0}}color="dark" dark expand="md">
+          <NavbarBrand style={{paddingTop:10,fontSize:20}} id="green-terminal" href="/">Kod3r@kod3r-dev ~ $</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink style={{color:'#9d9d9d'}}href="/">/home/kod3r</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink  style={{color:'#9d9d9d'}} href="/projects">~/projects</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+    </div>
+    )
+    };
+}
 //Module Exports
 export default Header;
