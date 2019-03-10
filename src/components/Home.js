@@ -41,7 +41,7 @@ const Home =  () =>{
 			</div>
 			<div className="row">
 				<div className="col-md-4 col-md-offset-4 user-description text-center">
-					<p>Hi I&#39;m Godti Vinod . My actual name is Godti B B Satyanarayan and i am software developer,have intrest in learning latest mobile and web technologies.I love travelling,would
+					<p>Hi I&#39;m Godti Vinod . My actual name is Godti B B Satyanarayan and i am software developer,have interest in learning latest mobile and web technologies.I love travelling,would
 say if travelling is free i will roaming around the world and never come back.Bike riding is one of my
 hobby and also have interest in modified bikes and cars.</p>
 				</div>
