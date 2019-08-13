@@ -176,3 +176,10 @@ td {
 	text-decoration: none;
 	color: #222!important;
 }
+img{
+	display: block;
+  max-width:500px;
+  max-height:300px;
+  width: auto;
+  height: auto;
+}

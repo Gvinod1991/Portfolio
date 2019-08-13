@@ -25,7 +25,7 @@ import bj_app from '../img/bj_app.png';
               <CardBody>
                 <CardTitle><h2>Hotelier Admin Panel of Bookingjini</h2></CardTitle>
                 <br/>
-                <CardText style={{fontSize:14}}>To manage the inventory and bookings of the hoteliers.</CardText>
+                <CardText style={{fontSize:14}}>Web application to help hoteliers to manage their bookings, inventory, and distribution of inventory to multiple channel partners. My role is to develop the API endpoints and Develop the UI & Integration of API.Technology stack is ReactJs,NodeJs/ExpressJs, MySql and HTML5/CSS3.</CardText>
                 <Row>
                 <Col md="4"></Col>
                   <Col md="4">
@@ -41,11 +41,11 @@ import bj_app from '../img/bj_app.png';
               <CardImg top width="100%" src={BJ_be} alt="Card image cap" />
               <CardBody>
                 <CardTitle><h2>Booking Engine Panel of Bookingjini</h2></CardTitle>
-                <CardText style={{fontSize:14}}>Customer hotel bookings engine to book the rooms directly from hotel's website.</CardText>
+                <CardText style={{fontSize:14}}>Booking engine app to book rooms directly from the hotel's website without with very less price than other online travel agents.My role is to lead the team of 3 members including me. Technology stack is React Js and Material CSS.</CardText>
                 <Row>
                 <Col md="4"></Col>
                   <Col md="4">
-                  <a className="view" style={{textAlign:'centadminadminer',fontWeight:'bold',paddingBottom:5,borderBottomStyle:'solid',borderBottomColor:'#444',borderBottomWidth:2}} href="https://ibe.bookingjini.com" target="_blank" > View More</a></Col>
+                  <a className="view" style={{textAlign:'center',fontWeight:'bold',paddingBottom:5,borderBottomStyle:'solid',borderBottomColor:'#444',borderBottomWidth:2}} href="https://ibe.bookingjini.com" target="_blank" > View More</a></Col>
                    <Col md="4"></Col>
                 </Row>
               </CardBody>
@@ -57,7 +57,7 @@ import bj_app from '../img/bj_app.png';
               <CardBody>
                 <CardTitle><h2>MyStyle Web Admin App</h2></CardTitle>
                 <br/>
-                <CardText style={{fontSize:14}}>To manage the salon service vendors and bookings of salon services from customers</CardText>
+                <CardText style={{fontSize:14}}>Admin panel to manage the salon and spa service booking and inventory. Vendors are listed and inventory of each salon vendor updated via this application. Technology stack is ReactJs,NodeJs/Express.Js and MongoDB.My role to manage the team of 2 and develop the API of inventory module and API integration in UI.</CardText>
                 <Row>
                 <Col md="4"></Col>
                   <Col md="4">
@@ -76,7 +76,7 @@ import bj_app from '../img/bj_app.png';
               <CardBody>
                 <CardTitle><h2>Mobile App Hotelier Dashboard of Bookingjini</h2></CardTitle>
                 <br/>
-                <CardText style={{fontSize:14}}>To manage the inventory and bookings of the hoteliers from mobile app</CardText>
+                <CardText style={{fontSize:14}}>ToMobile application to manage the hotel such as the creation of new property, Manage inventory and rates, bookings report for both Android and IOS platform. Technology stack is ReactNative and ReactNative Elements</CardText>
                 <Row>
                 <Col md="4"></Col>
                   <Col md="4">
@@ -92,7 +92,7 @@ import bj_app from '../img/bj_app.png';
               <CardBody>
                 <CardTitle><h2>Mobile App MyStyle </h2></CardTitle>
                 <br/>
-                <CardText style={{fontSize:14}}>App to to book the nearest salon services in the their area.</CardText>
+                <CardText style={{fontSize:14}}>Mobile application to book the salon and spa services in India. Users can book seats without going to the salon by choosing the service, date the service and payment options. Long waiting queue problem is solved in this application. Technology stack is ReactNative and Javascript and Technology stack is ReactNative and ReactNative Elements</CardText>
                 <Row>
                 <Col md="4"></Col>
                   <Col md="4">

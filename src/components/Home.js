@@ -41,9 +41,7 @@ const Home =  () =>{
 			</div>
 			<div className="row">
 				<div className="col-md-4 col-md-offset-4 user-description text-center">
-					<p>Hi I&#39;m Godti Vinod . My actual name is Godti B B Satyanarayan and i am software developer,have interest in learning latest mobile and web technologies.I love travelling,would
-say if travelling is free i will roaming around the world and never come back.Bike riding is one of my
-hobby and also have interest in modified bikes and cars.</p>
+					<p>Hi I&#39;m Godti Vinod . My actual name is Godti B B Satyanarayan I am a web and mobile application developer who fell in love with Javascript. I have done projects in the hospitality industry. I have an interest in learning the latest web and mobile application technologies and share my knowledge with aspiring developers via my blog & teaching.</p>
 				</div>
 			</div>
 			<div className="push"></div>
