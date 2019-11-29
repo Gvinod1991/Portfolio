@@ -1,179 +1,665 @@
-<html>
-  <head>
-    <title>Godti Vinod's Portfolio </title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"  type="text/css">
-	  <link href="./css/style.css" type="text/css" rel="stylesheet"/>
-       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    </head>
-  <body  data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
-     <!-- Start of Navigation -->
-      <div class="main-header ">
-        <div class="container">
-            <div class="col-md-4 col-sm-2 col-xs-4 headerLeft"> 
-                <div class="logo ">
-                     <a href="index.html"><img  src="http://www.krisaisys.com/portfolio/image/logo.png" alt="logo of this portfolio"/></a>
-                </div>
-            </div>
-            <div class="col-md-8 col-sm-10 col-xs-8 headerRight">   
-                <div class="header-right">
-                      <nav class="menu">
-                          <div class="navbar-header">
-                              <span  class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="fa fa-bars"></span>
-                              </span>
-                          </div>
-                          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                              <ul class="navbar navbar-right">
-                                 <li ><a class="active" href="#about">About Me </a></li>
-                                  <li><a href="#portfolio">Portfolio</a></li>
-                                  <li><a href="#contact">Contact</a></li>
-                              </ul>
-                          </div>
-                      </nav>
-                </div>
-          </div>
-        </div>
-     </div>
-    <!-- End of Navigation -->
-       <!-- Start of section about -->
-     
-     <div  id="main">
-         <section id="about"  >
-            <div class="container content">
-                
-                <div class="sectionTitle text-center">
-                    
-                   
-                   <p>Let me introduce myself</p>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 text-center top ">
-                    
-                    <h3>GODTI VINOD</h3>
-                    <h4>WEB DEVELOPER</h4>
-                    <p class="color"><span class="fa fa-phone "></span> +91-9861562918 <span class="fa fa-phone fa-rotate-270"></span>
-                    </p>
-                    <p class="color"><span class="fa fa-envelope"></span> venkat.godti3@gmail.com <span class="fa fa-envelope"></span>
-                    </p>
-                    <p class="color"><span class="fa fa-globe"></span> www.godtivinod.com <span class="fa fa-globe"></span></p>
-                    
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 ">
-                <img class="img img-responsive image" src="http://www.krisaisys.com/portfolio/image/godtiVinod.jpg" alt="Developer photo "/>
-                
-                
-                
-                </div>
-                <div class="col-md-4 col-sm-4  col-xs-12 text-justify top  color">
-                    <span class="fa fa-code"></span> I am coding geek ,fond of learing new technologies in web.I love travelling,would say if travelling is free i will roaming arround the world and never come back.Bike riding is one of my hobby and have interest in cars and watching movies.
-                
-                </div>
-             
-            </div>   
-             
-         </section>
-          <!-- Start of section portfolio -->
-         <section id="portfolio">
-             
-             <div class="container content">
-                
-             <div class="sectionTitle text-center">
-                   <p>My recent works</p>
-             </div>
-             <div class="col-md-4">
-                <div class="thumbnail">
-                   <img class="img img-responsive" src="http://www.krisaisys.com/portfolio/image/1c.jpg"/>
-                  <div class="caption">
-                    <h3>Project1</h3>
-                    <p>Project description</p>
-                    <p><a href="#" class="btn btn-info" role="button">View More</a> </p>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                   <img class="img img-responsive" src="http://www.krisaisys.com/portfolio/image/3c.jpg"/>
-                  <div class="caption">
-                    <h3>Project2</h3>
-                    <p>Project description</p>
-                    <p><a href="#" class="btn btn-info" role="button">View More</a> </p>
-                  </div>
-                </div>
-            </div>
-             <div class="col-md-4">
-                 <div class="thumbnail">
-                 <img class="img img-responsive" src="http://www.krisaisys.com/portfolio/image/2c.jpg"/>
-                  <div class="caption">
-                    <h3>Project3</h3>
-                    <p>Project description</p>
-                    <p><a href="#" class="btn btn-info" role="button">View More</a> </p>
-                  </div>
-                </div>
-            </div>
-            
-         </div>
-         </section>
-          <!-- Start of section contact -->
-         <section id="contact" >
-             <div class="container content">
-                
-              <div class="sectionTitle text-center">
-                    
-                   
-                  <p>Get in touch </p>
-                </div>
-             <div class="col-md-2"></div>
-             <div class="col-md-8">
-               <form>
-				<div class="form-group">
-				<input   class="form-control input-lg text"  type="text" name="username" placeholder="your name" required/><p class="text_validity"></p>
+<!DOCTYPE html>
+<html class="side-header-overlay-full-screen" data-style-switcher-options="{'changeLogo': false, 'borderRadius': 0, 'colorPrimary': '#FEA45A', 'colorSecondary': '#e36159', 'colorTertiary': '#2baab1', 'colorQuaternary': '#4D5154'}">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+		<title>Karini - Mukesh Himatsingka Group</title>	
+
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" content="Karini - Mukesh Himatsingka Group">
+		<meta name="author" content="Karini - Mukesh Himatsingka Group">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="/static/img/mta_logo.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/static/img/mta_logo.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800%7CMontserrat:300,400,600,700" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">		
+		<link rel="stylesheet" href="/static/vendor/fontawesome-free/css/all.min.css">		
+		<link rel="stylesheet" href="/static/vendor/animate/animate.min.css">	
+		<link rel="stylesheet" href="/static/vendor/simple-line-icons/css/simple-line-icons.min.css">		
+		<link rel="stylesheet" href="/static/vendor/owl.carousel/assets/owl.carousel.min.css">		
+		<link rel="stylesheet" href="/static/vendor/owl.carousel/assets/owl.theme.default.min.css">		
+		<link rel="stylesheet" href="/static/vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="/static/css/theme.css">
+		<link rel="stylesheet" href="/static/css/theme-elements.css">
+		<link rel="stylesheet" href="/static/css/theme-blog.css">
+		<link rel="stylesheet" href="/static/css/theme-shop.css">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="/static/vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="/static/vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="/static/vendor/rs-plugin/css/navigation.css">
+		
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="/static/css/demos/demo-architecture-interior.css">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="/static/css/skins/skin-architecture-interior.css">		
+		<script src="/static/master/style-switcher/style.switcher.localstorage.js"></script> 
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="/static/css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="/static/vendor/modernizr/modernizr.min.js"></script>
+
+	</head>
+	<body data-target="#header" data-spy="scroll" data-offset="100">
+
+		<div class="body">
+			<div class="sticky-wrapper sticky-wrapper-transparent sticky-wrapper-effect-1 sticky-wrapper-effect-1-dark sticky-wrapper-border-bottom" data-plugin-sticky data-plugin-options="{'minWidth': 0, 'stickyStartEffectAt': 100, 'padding': {'top': 0}}">
+				<div class="sticky-body">
+					<div class="container container-xl">
+						<div class="row justify-content-between align-items-center">
+							<div class="col-auto">
+								<div class="py-4">
+									<a href="demo-architecture-interior.html">
+										<img alt="Porto" width="153" height="53" src="/static/img/mta_logo.png">
+									</a>
+								</div>
+							</div>
+							<div class="col-auto text-right d-flex align-items-center justify-content-end">
+								
+								<ul class="social-icons social-icons-clean social-icons-icon-light d-none d-md-inline-block mx-4">
+									<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+									<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+									<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+								</ul>
+								<button class="hamburguer-btn hamburguer-btn-light" data-set-active="false">
+									<span class="hamburguer">
+										<span></span>
+										<span></span>
+										<span></span>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<header id="header" class="side-header-overlay-full-screen side-header-hide" data-plugin-options="{'stickyEnabled': false}">
+
+				<button class="hamburguer-btn hamburguer-btn-light hamburguer-btn-side-header hamburguer-btn-side-header-overlay active" data-set-active="false">
+					<span class="close">
+						<span></span>
+						<span></span>
+					</span>
+				</button>
+
+				<div class="header-body d-flex h-100">
+					<div class="header-column flex-row flex-lg-column justify-content-center h-100">
+						<div class="header-container container d-flex h-100">
+							<div class="header-row header-row-side-header flex-row h-100 pb-5">
+								<div class="side-header-scrollable scrollable colored-slider h-50" data-plugin-scrollable>
+									<div class="scrollable-content">
+										<div class="header-nav header-nav-light-text header-nav-links header-nav-links-side-header header-nav-links-vertical header-nav-links-vertical-expand header-nav-click-to-open align-self-start">
+											<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-4 header-nav-main-sub-effect-1">
+												<nav>
+													<ul class="nav nav-pills" id="mainNav">
+														<li class="dropdown">
+															<a class="dropdown-item active" data-hash data-hash-offset="95" href="#home">Home</a>
+														</li>
+														<li class="dropdown">
+															<a class="dropdown-item" data-hash data-hash-offset="95" href="#whoweare">About Us</a>
+														</li>
+														<li class="dropdown">
+															<a class="dropdown-item" data-hash data-hash-offset="95" href="#ourservices">Our Services</a>
+														</li>
+														<li class="dropdown">
+															<a class="dropdown-item" data-hash data-hash-offset="95" href="#ourprojects">Gallery</a>
+														</li>
+														<li class="dropdown">
+															<a class="dropdown-item" data-hash data-hash-offset="95" href="#whyhireus">Ventures</a>
+														</li>
+														
+														<li class="dropdown">
+															<a class="dropdown-item" data-hash data-hash-offset="95" href="#ourteam">Our Team</a>
+														</li>
+														<li class="dropdown">
+															<a class="dropdown-item" data-hash data-hash-offset="95" href="#contactus">Contact Us</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+				<section class="section section-height-5 bg-light border-0 m-0" id="whoweare">
+					<div class="container container-xl">
+						<div class="row align-items-center">
+							
+							<div class="col-lg-6">
+										<img src="/static/img/about.jpg" class="img-fluid" alt="" />
+
+							</div>
+							<div class="col-lg-6 mb-5 mb-lg-0">
+								<!-- <div class="overflow-hidden">
+									<span class="d-block text-color-primary custom-font-secondary font-weight-semibold appear-animation" data-appear-animation="maskUp">ABOUT US</span>
+								</div> -->
+								<div class="overflow-hidden mb-3">
+									<h2 class="text-color-dark font-weight-extra-bold text-11 negative-ls-1 line-height-3 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="250">ABOUT US</h2>
+								</div>
+								<p class="text-4 line-height-9 pr-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">From its inception in 1998 the Karini - Mukesh Himatsingka Group has evolved as one of the leading automobile dealership groups in eastern India. The group has evolved to a strength of 1600 employees with an annual turnover of 600 crores.
+									Over the last two decades the group has ventured in multiple channels like automobile dealerships, spare part distributorships, fast food restaurants, education & skill development.</p>
+								<a href="#" class="btn btn-dark btn-outline font-weight-extra-bold text-3 px-5 py-3 border-width-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section section-height-4 bg-quaternary border-0 m-0 appear-animation" data-appear-animation="fadeIn" id="ourservices">
+					<div class="container container-xl">
+						<div class="row">
+							<div class="col text-center">
+								<div class="overflow-hidden">
+									<span class="d-block text-color-primary custom-font-secondary font-weight-semibold appear-animation" data-appear-animation="maskUp">WHAT WE DO</span>
+								</div>
+								<div class="overflow-hidden mb-4">
+									<h2 class="text-color-light font-weight-bold mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="250">Our Services</h2>
+								</div>
+							</div>
+						</div>
+						<div class="featured-boxes featured-boxes-style-4 custom-featured-boxes-style-1">
+							<div class="row mb-2">
+								<div class="col-md-6 col-xl-3">
+									<a href="#" class="text-decoration-none simple-ajax-popup">
+										<div class="featured-box featured-box-primary featured-box-effect-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+											<div class="box-content">
+												<i class="fa fa-home fa-4x"></i>
+												<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">AUTOMOBILE DEALERSHIP</h3>
+												<p class="font-weight-light text-color-light opacity-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-md-6 col-xl-3">
+									<a href="#" class="text-decoration-none simple-ajax-popup">
+										<div class="featured-box featured-box-primary featured-box-effect-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+											<div class="box-content">
+												<i class="fa fa-hospital fa-4x"></i>
+												<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">SPAREPARTS DISTRIBUTORSHIP</h3>
+												<p class="font-weight-light text-color-light opacity-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-md-6 col-xl-3">
+									<a href="#" class="text-decoration-none simple-ajax-popup">
+										<div class="featured-box featured-box-primary featured-box-effect-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+											<div class="box-content">
+												<i class="fa fa-hotel fa-4x"></i>
+												<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">HOSPITALITY</h3>
+												<p class="font-weight-light text-color-light opacity-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </p>
+											</div>
+										</div>
+									</div>
+								</a>
+								<div class="col-md-6 col-xl-3">
+									<a href="#" class="text-decoration-none simple-ajax-popup">
+										<div class="featured-box featured-box-primary featured-box-effect-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
+											<div class="box-content">
+												<i class="fa fa-book fa-4x"></i>
+												<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">EDUCATION & SKILL DEVELOPMENT</h3>
+												<p class="font-weight-light text-color-light opacity-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col text-center">
+								<a data-hash data-hash-offset="95" href="#" class="btn btn-dark btn-outline custom-btn-color-1 font-weight-extra-bold text-color-light text-3 px-5 py-3 border-width-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">CONTACT US</a>
+							</div>
+						</div>
+					</div>		
+				</section>
+				<section class="section section-parallax section-height-4 overlay overlay-show border-0 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="/static/demos/architecture-interior/backgrounds/background-1.jpg" id="whyhireus">
+					<div class="container container-xl pb-5 mb-4">
+						<div class="row justify-content-center">
+							<div class="col-lg-9 col-xl-6 text-center">
+								<h2 class="text-color-light font-weight-bold pb-3 mb-3">Our Ventures</h2>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container container-xl custom-negative-margin-top z-index-2 position-relative">
+					<div class="row align-items-center justify-content-center">
+					<div class="col-lg-8 col-xl-4 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
+							<div class="card border-0 custom-box-shadow-1">
+								<div class="card-body text-center mt-4">
+									<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0" data-plugin-options="{'items':1, 'nav': true, 'dots': false}">
+										<div class="text-center px-5">
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">50</span>
+											<p class="text-4 custom-responsive-m-p-x">Kaikan Ford</p>
+											<img src="/static/img/mta_logo.png" />
+										</div>
+										<div class="text-center px-5">
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">12</span>
+											<p class="text-4 custom-responsive-m-p-x">Mukesh Triumph </p>
+											<img src="/static/img/mta_logo.png" />
+										</div>
+										<div class="text-center px-5">
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">15</span>
+											<p class="text-4 custom-responsive-m-p-x">Mukesh Hyundai</p>
+											<img src="/static/img/mta_logo.png" />
+										</div>
+									</div>
+									<a data-hash data-hash-offset="95" href="#" class="btn btn-dark btn-outline font-weight-extra-bold text-3 px-5 py-3 border-width-4 custom-btn-pos-1 custom-btn-style-1">View More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8 col-xl-4 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
+							<div class="card border-0 custom-box-shadow-1">
+								<div class="card-body text-center mt-4">
+									<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0" data-plugin-options="{'items':1, 'nav': true, 'dots': false}">
+										<div class="text-center px-5">
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">50</span>
+											<p class="text-4 custom-responsive-m-p-x">Kaikan Ford</p>
+											<img src="/static/img/mta_logo.png" />
+										</div>
+										<div class="text-center px-5">
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">12</span>
+											<p class="text-4 custom-responsive-m-p-x">Mukesh Triumph </p>
+											<img src="/static/img/mta_logo.png" />
+										</div>
+										<div class="text-center px-5">
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">15</span>
+											<p class="text-4 custom-responsive-m-p-x">Mukesh Hyundai</p>
+											<img src="/static/img/mta_logo.png" />
+										</div>
+									</div>
+									<a data-hash data-hash-offset="95" href="#" class="btn btn-dark btn-outline font-weight-extra-bold text-3 px-5 py-3 border-width-4 custom-btn-pos-1 custom-btn-style-1">View More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8 col-xl-4 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
+								<div class="card border-0 custom-box-shadow-1">
+									<div class="card-body text-center mt-4">
+										<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0" data-plugin-options="{'items':1, 'nav': true, 'dots': false}">
+											<div class="text-center px-5">
+													<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">50</span>
+													<p class="text-4 custom-responsive-m-p-x">Kaikan Ford</p>
+													<img src="/static/img/mta_logo.png" />
+											</div>
+											<div class="text-center px-5">
+												<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">12</span>
+												<p class="text-4 custom-responsive-m-p-x">Mukesh Triumph </p>
+												<img src="/static/img/mta_logo.png" />
+											</div>
+											<div class="text-center px-5">
+												<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">15</span>
+												<p class="text-4 custom-responsive-m-p-x">Mukesh Hyundai</p>
+												<img src="/static/img/mta_logo.png" />
+											</div>
+										</div>
+										<a data-hash data-hash-offset="95" href="#" class="btn btn-dark btn-outline font-weight-extra-bold text-3 px-5 py-3 border-width-4 custom-btn-pos-1 custom-btn-style-1">View More</a>
+									</div>
+								</div>
+							</div>	
+					</div>
+				</div>
+
 				
+				<section class="section section-height-4 border-0 m-0" id="ourteam">
+					<div class="container container-xl">
+						<div class="row justify-content-center">
+							<div class="col-lg-9 col-xl-6 text-center">
+								
+								<div class="overflow-hidden mb-3">
+									<h2 class="text-color-dark font-weight-bold pb-2 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="250">Our Team</h2>
+								</div>
+							</div>
+						</div>
+						<div class="row appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+							<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+								<a href="#" class="text-decoration-none simple-ajax-popup">
+									<div class="card border-0 custom-box-shadow-1">
+										<svg class="custom-square-1 z-index-0" width="80" height="80">
+											<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
+										</svg>
+										<img class="card-img-top z-index-1" src="/static/img/team/team-2.jpg" alt="" />
+										<div class="card-body">
+											<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Michel Doe</h4>
+											<p class="card-text">CEO & Founder</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+								<a href="#" class="text-decoration-none simple-ajax-popup">
+									<div class="card border-0 custom-box-shadow-1">
+										<svg class="custom-square-1 z-index-0" width="80" height="80">
+											<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
+										</svg>
+										<img class="card-img-top z-index-1" src="/static/img/team/team-4.jpg" alt="" />
+										<div class="card-body">
+											<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Jessica Doe</h4>
+											<p class="card-text">Architect</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+								<a href="#" class="text-decoration-none simple-ajax-popup">
+									<div class="card border-0 custom-box-shadow-1">
+										<svg class="custom-square-1 z-index-0" width="80" height="80">
+											<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
+										</svg>
+										<img class="card-img-top z-index-1" src="/static/img/team/team-5.jpg" alt="" />
+										<div class="card-body">
+											<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">John Doe</h4>
+											<p class="card-text">Architect</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<a href="#" class="text-decoration-none simple-ajax-popup">
+									<div class="card border-0 custom-box-shadow-1">
+										<svg class="custom-square-1 z-index-0" width="80" height="80">
+											<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
+										</svg>
+										<img class="card-img-top z-index-1" src="/static/img/team/team-6.jpg" alt="" />
+										<div class="card-body">
+											<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Alice Doe</h4>
+											<p class="card-text">Architect</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section section-height-4 bg-light border-0 m-0" id="ourprojects">
+						<div class="container container-xl">
+							<div class="row justify-content-center">
+								<div class="col-lg-9 col-xl-6 text-center">
+									
+									<div class="overflow-hidden mb-3">
+										<h2 class="text-color-dark font-weight-bold mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="250">Gallery</h2>
+									</div>
+								</div>
+							</div>
+							
+							<div id="portfolioLoadMoreWrapper" class="row portfolio-list sort-destination mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" data-sort-id="portfolio" data-total-pages="3" data-ajax-url="ajax/demo-architecture-interior-ajax-load-more-">
+	
+								<div class="col-lg-4 isotope-item">
+									<div class="portfolio-item">
+										<a href="#" class="text-decoration-none">
+											<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+												<span class="thumb-info-wrapper">
+													<img src="/static/img/demos/architecture-interior/projects/project-1.jpg" class="img-fluid" alt="">
+													<!-- <span class="thumb-info-title text-left">
+														<span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3"></span>
+														<span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pr-xl-5 mr-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+													</span> -->
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="col-lg-4 isotope-item">
+									<div class="portfolio-item">
+										<a href="#" class="text-decoration-none">
+											<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+												<span class="thumb-info-wrapper">
+													<img src="/static/img/demos/architecture-interior/projects/project-2.jpg" class="img-fluid" alt="">
+													<!-- <span class="thumb-info-title text-left">
+														<span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3"></span>
+														<span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pr-xl-5 mr-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+													</span> -->
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="col-lg-4 isotope-item">
+									<div class="portfolio-item">
+										<a href="#" class="text-decoration-none">
+											<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+												<span class="thumb-info-wrapper">
+													<img src="/static/img/demos/architecture-interior/projects/project-3.jpg" class="img-fluid" alt="">
+													<!-- <span class="thumb-info-title text-left">
+														<span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Project Name</span>
+														<span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pr-xl-5 mr-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+													</span> -->
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="col-lg-4 isotope-item">
+										<div class="portfolio-item">
+											<a href="#" class="text-decoration-none">
+												<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+													<span class="thumb-info-wrapper">
+														<img src="/static/img/demos/architecture-interior/projects/project-3.jpg" class="img-fluid" alt="">
+														<!-- <span class="thumb-info-title text-left">
+															<span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Project Name</span>
+															<span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pr-xl-5 mr-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+														</span> -->
+													</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-4 isotope-item">
+											<div class="portfolio-item">
+												<a href="#" class="text-decoration-none">
+													<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+														<span class="thumb-info-wrapper">
+															<img src="/static/img/demos/architecture-interior/projects/project-3.jpg" class="img-fluid" alt="">
+															<!-- <span class="thumb-info-title text-left">
+																<span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Project Name</span>
+																<span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pr-xl-5 mr-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+															</span> -->
+														</span>
+													</span>
+												</a>
+											</div>
+									</div>
+									<div class="col-lg-4 isotope-item">
+											<div class="portfolio-item">
+												<a href="#" class="text-decoration-none">
+													<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear custom-thumb-info-style-1">
+														<span class="thumb-info-wrapper">
+															<img src="/static/img/demos/architecture-interior/projects/project-3.jpg" class="img-fluid" alt="">
+															<!-- <span class="thumb-info-title text-left">
+																<span class="thumb-info-inner font-weight-bold line-height-1 text-4 mb-3">Project Name</span>
+																<span class="thumb-info-type text-transform-none font-weight-light text-1 line-height-7 pr-xl-5 mr-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing eli blandit massa im. </span>
+															</span> -->
+														</span>
+													</span>
+												</a>
+											</div>
+									</div>
+							</div>
+	
+							<div id="portfolioLoadMoreBtnWrapper" class="row">
+								<div class="col text-center">
+	
+									<div id="portfolioLoadMoreLoader" class="portfolio-load-more-loader" style="min-height: 61px;">
+										<div class="bounce-loader">
+											<div class="bounce1"></div>
+											<div class="bounce2"></div>
+											<div class="bounce3"></div>
+										</div>
+									</div>
+	
+									<button id="portfolioLoadMore" class="btn btn-dark btn-outline font-weight-extra-bold text-3 px-5 py-3 border-width-4 appear-animation" data-appear-animation="fadeInUpShorter">LOAD MORE</button><a href="#" class="btn btn-primary btn-outline ml-2 font-weight-extra-bold text-3 px-5 py-3 border-width-4 appear-animation" data-appear-animation="fadeInUpShorter">VIEW ALL</a>
+								</div>
+							</div>
+							
+						</div>
+				</section>
+				<section class="section section-height-4 bg-quaternary border-0 m-0" id="contactus">
+					<div class="container container-xl">
+						<div class="row mb-5">
+							<div class="col text-center">
+								<span class="text-color-primary custom-font-secondary font-weight-semibold">GET IN TOUCH</span>
+								<h2 class="text-color-light font-weight-bold mb-3">Contact Us</h2>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-lg-6 col-xl-4 order-2 order-xl-1 mb-4 mb-lg-0">
+								<div class="card custom-card-style-1 h-100">
+									<div class="card-body">
+										<a href="demo-architecture-interior.html#" class="text-decoration-none">
+											<img src="/static/img/mta_logo.png" class="img-fluid pb-2 mt-3 mb-4" width="153" height="53" alt="Demo Architecture & Interior Design" />
+										</a>
+										<h3 class="text-color-primary font-weight-bold text-transform-none text-8 line-height-1 pr-5 mb-4">Karini</h3>
+										<ul class="list list-icons list-icons-sm">
+											<li class="text-color-light font-weight-light">
+												<i class="fas fa-angle-right custom-text-color-grey-1"></i> <strong class="font-weight-normal">Address:</strong> Frost House, PP-101, Nazrul Islam Avenue ,(VIP Road),Krishnapur, Kolkata, West Bengal - 700 059
+											</li>
+											<li class="text-color-light font-weight-light">
+												<i class="fas fa-angle-right custom-text-color-grey-1"></i> <strong class="font-weight-normal">Phone:</strong><a href="#" class="link-hover-style-1 ml-1"> +91 7640 89781</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-xl-4 order-1 order-xl-2 mb-4 mb-xl-0">
+								<div class="card custom-card-style-1 h-100 opacity-10 py-lg-5 py-xl-0" data-appear-animation="customBorderColored" data-appear-animation-delay="500" data-plugin-options="{'accY': -500}">
+									<div class="card-body d-flex justify-content-center flex-column text-center">
+										<span class="text-color-light text-4 mb-3">CALL US NOW</span>
+										<a href="tel:+1234567890" class="text-decoration-none text-color-light font-weight-bold line-height-2 text-11 opacity-10" data-appear-animation="customTextColored" data-appear-animation-delay="500" data-plugin-options="{'accY': -200}">+91-7640 89781</a>
+										<a href="tel:+1234567890" class="text-decoration-none text-color-light font-weight-bold line-height-2 text-9">+91-7640 89781</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xl-4 order-3">
+								<div class="card custom-card-style-1 h-100">
+									<div class="card-body pt-5">
+
+										<form id="contactForm" class="contact-form form-style-4 form-errors-light" action="https://preview.oklerthemes.com/porto/7.6.0/php/contact-form.php" method="POST">
+											<input type="hidden" value="Contact Form" name="subject" id="subject">
+											<div class="form-group col-lg-12 ml-auto my-0">
+												<div class="contact-form-success alert alert-success d-none" id="contactSuccess">
+													Message has been sent to us.
+												</div>
+
+												<div class="contact-form-error alert alert-danger d-none" id="contactError">
+													Error sending your message.
+													<span class="mail-error-message text-1 d-block" id="mailErrorMessage"></span>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-lg-6">
+													<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control py-2" placeholder="Name" name="name" id="name" required>
+												</div>
+												<div class="form-group col-lg-6">
+													<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control py-2" placeholder="E-mail" name="email" id="email" required>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col">
+													<textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" placeholder="Message" name="message" id="message" required></textarea>
+												</div>
+											</div>
+											<input type="submit" value="Send Message" class="btn btn-dark text-2 font-weight-bold text-uppercase btn-px-5 py-3 position-absolute" data-loading-text="Loading..." style="bottom: -30px; right: 25px;">
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div> 
+
+			<footer id="footer" class="bg-quaternary border-width-1 custom-border-color-grey py-5 mt-0">
+				<div class="container container-xl">
+					<div class="row justify-content-between">
+						<div class="col-auto">
+							<ul class="social-icons social-icons-clean social-icons-icon-light">
+								<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+								<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-auto text-right">
+							<p class="text-color-light font-weight-light opacity-8 mb-0" style="color:#0c214e!important	">Copyrights © 2019 All Rights Reserved by Mukesh Training Academy</p>
+						</div>
+					</div>
 				</div>
-				<div class="form-group">
-				<input class="form-control input-lg" type="email" name="emailid" placeholder="your email id" required/>
-				
-				</div>
-				<div class="form-group">
-				<input id="subject" class="form-control input-lg" type="text" name="subject" placeholder=" subject" required/><p class="subject_validity"></p>
-				</div>
-				<div class="form-group">
-				<textarea   rows="7"  cols="5" class="form-control" placeholder="Message" required></textarea><p class="TextArea"></p>
-				</div>
-				
-				<button   class="btn btn-lg btn-info"  type="submit" >submit</button>
-			
-				</form>
-             
-             </div>
-             <div class="col-md-2"></div>
-         </div>
-     </section>
-     </div>
-    </p><p>
-    <div class="clearfix"></div>
-       <!-- Start of section footer -->
-     <div class="footer">
-         <div class="text-center social ">
-             <a href="https://www.facebook.com/godti.vinod"><span class="fa fa-facebook fa-2x"></span></a>
-             <a href="https://twitter.com/GodtiVinod"><span class="fa fa-twitter fa-2x"></span></a>
-             <a href="https://www.linkedin.com/in/godti-vinod-37bb46a9"> <span class="fa fa-linkedin fa-2x"></span></a>
-             <a href="http://codepen.io/GodtiVinod"><span class="fa fa-codepen fa-2x"></span></a>
-             <a href="https://github.com/Gvinod1991"><span class="fa fa-github fa-2x"></span></a>
-         
-         </div> 
-         <div id="top"> <span  class="fa fa-chevron-circle-up fa-2x"> </span></div>
-     </div>
-           
- </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
-            
+			</footer>
+
+		</div>
+
+		<!-- Vendor -->
+		<script src="/static/vendor/jquery/jquery.min.js"></script>		
+		<script src="/static/vendor/jquery.appear/jquery.appear.min.js"></script>		
+		<script src="/static/vendor/jquery.easing/jquery.easing.min.js"></script>		
+		<script src="/static/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+		<script src="/static/master/style-switcher/style.switcher.js" id="styleSwitcherScript" data-base-path="" data-skin-src="master/less/skin-architecture-interior.less"></script>		
+		<script src="/static/vendor/popper/umd/popper.min.js"></script>		
+		<script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>		
+		<script src="/static/vendor/common/common.min.js"></script>		
+		<script src="/static/vendor/jquery.validation/jquery.validate.min.js"></script>		
+		<script src="/static/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>		
+		<script src="/static/vendor/jquery.gmap/jquery.gmap.min.js"></script>		
+		<script src="/static/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>		
+		<script src="/static/vendor/isotope/jquery.isotope.min.js"></script>		
+		<script src="/static/vendor/owl.carousel/owl.carousel.min.js"></script>		
+		<script src="/static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>		
+		<script src="/static/vendor/vide/jquery.vide.min.js"></script>		
+		<script src="/static/vendor/vivus/vivus.min.js"></script>		
+		<script src="/static/vendor/nanoscroller/jquery.nanoscroller.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="/static/js/theme.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="/static/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>		
+		<script src="/static/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="/static/js/views/view.contact.js"></script>
+		
+		<!-- Demo -->
+		<script src="/static/js/demos/demo-architecture-interior.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="/static/js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="/static/js/theme.init.js"></script>
+
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+			ga('create', 'UA-42715764-5', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script src="/static/master/analytics/analytics.js"></script>
+		
+	</body>
 </html>
