@@ -62,6 +62,9 @@
         height: 400px; 
         width: 100%; 
        } 
+	   .navbar-nav {
+		font-size: 17px;
+	   }
 	   .navbar .dropdown-toggle, .navbar .dropdown-menu a {
 			cursor: pointer;
 		
@@ -91,14 +94,195 @@
 				border-left: .3em solid;
 			}
 		}
-		.mr-auto{
-    		padding-left: 14em !important;
+		.navbar-expand-md .navbar-nav .nav-link {
+			padding-right: 13px;
+			padding-left: 13px;
 		}
+		/* .mr-auto{
+    		padding-left: 10px !important;
+		} */
 		.nav-link{
 			color: #16181b !important;
 		}
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
 
-		</style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.section-header h3 {
+  font-size: 36px;
+  color: #413e66;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #535074;
+  width: 50%;
+}
+
+/* Section with background
+--------------------------------*/
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+
+#services {
+  padding: 60px 0 40px 0;
+}
+
+#services .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#services .box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#services .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#services .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+#services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#services .title a {
+  color: #111;
+}
+
+#services .box:hover .title a {
+  color: #1bb1dc;
+}
+
+#services .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+#team {
+  padding: 60px 0;
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#team .member .member-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+  padding: 15px 0;
+  background: rgba(29, 28, 41, 0.6);
+}
+
+#team .member .member-info-content {
+  transition: margin 0.2s;
+  height: 40px;
+  transition: height 0.4s;
+}
+
+#team .member:hover .member-info {
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  height: 80px;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+
+#team .member .social a:hover {
+  color: #1bb1dc;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+	</style>
 		
 
 	</head>
@@ -109,9 +293,9 @@
 				<div class="sticky-body">
 					<div class="container container-xl">
 							<div class="navbar navbar-expand-md " role="navigation">
-									<a class="navbar-brand" href="#"><img alt="Porto" width="153" height="83" src="/static/img/logo.jpg"></a>
+									<a class="navbar-brand" href="#"><img alt="Porto" width="153" height="83" src="/static/img/karinilogo.png"></a>
 									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-										<!-- <span class="navbar-toggler-icon"></span> -->
+									
 										<i class="fa fa-bars" aria-hidden="true"></i>
 									</button>
 									<div class="collapse navbar-collapse" id="navbarCollapse">
@@ -137,16 +321,16 @@
 																</ul>
 															</li>
 															<li class="dropdown-item dropdown">
-																	<a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Education</a>
-																	<ul class="dropdown-menu" aria-labelledby="dropdown2-1">
+																	<a class="dropdown-toggle" id="dropdown2-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Education</a>
+																	<ul class="dropdown-menu" aria-labelledby="dropdown2-2" >
 																		<li class="dropdown-item" ><a href="http://www.mtaedu.in" target="_blank" class="nav-link">Mukesh Training Academy</a></li>
 																		<li class="dropdown-item" ><a href="https://www.frostees.in" target="_blank" class="nav-link">Frostees India Pvt. Ltd</a></li>
 																	
 																	</ul>
 																</li>
 																<li class="dropdown-item dropdown">
-																		<a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hospitality</a>
-																		<ul class="dropdown-menu" aria-labelledby="dropdown2-1">
+																		<a class="dropdown-toggle" id="dropdown2-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hospitality</a>
+																		<ul class="dropdown-menu" aria-labelledby="dropdown2-3">
 																			<li class="dropdown-item" ><a href="http://www.orientalbistro.in" target="_blank" class="nav-link">Oriental Bistro</a></li>
 																			<li class="dropdown-item" ><a href="#" target="_blank" class="nav-link">Pizza hut</a></li>
 																			<li class="dropdown-item" ><a href="http://foodiesworld.in" target="_blank" class="nav-link">Foodies world</a></li>
@@ -154,7 +338,7 @@
 																		</ul>
 																	</li>
 																	<li class="dropdown-item dropdown">
-																			<a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services and Spare Parts</a>
+																			<a class="dropdown-toggle" id="dropdown2-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services and Spare Parts</a>
 																			<ul class="dropdown-menu" aria-labelledby="dropdown2-1">
 																				<li class="dropdown-item" ><a href="https://mukesh.hyundaimotor.in/genuine-parts" target="_blank" class="nav-link">Hyundai</a></li>
 																				<li class="dropdown-item" ><a href="#" target="_blank" class="nav-link">Ford</a></li>
@@ -474,7 +658,7 @@
 							</div>	
 					</div>
 				</div>
-				<section class="section section-height-4 border-0 m-0" id="ourteam" style="margin-bottom:-100px !important;">
+				<section class="section section-height-4 border-0 m-0" id="ourteam" >
 					<div class="container container-xl" >
 						<div class="row justify-content-center">
 							<div class="col-lg-9 col-xl-6 text-center">
@@ -545,77 +729,87 @@
 					</div>
 					
 				</section>
-				<section class="section section-height-4 border-0 m-0"  id="ouradvisors" >
-						<div class="container container-xl ">
-								<div class="row justify-content-center">
-									<div class="col-lg-9 col-xl-6 text-center">
-										
-										<div class="overflow-hidden mb-3">
-											<h2 class="text-color-dark font-weight-bold pb-2 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="250">Our Advisors</h2>
-										</div>
+				<section  class="section-bg" id="ouradvisors">
+						<div class="container" id="team">
+						  <div class="section-header">
+							<h3 style="text-transform: none;color: #212529 !important;font-family:Montserrat, sans-serif;font-size:2.2em">Our Advisors</h3>
+						  </div><br/>
+				  
+						  <div class="row">
+				  
+							<div class="col-lg-3 col-md-6 wow fadeInUp">
+							  <div class="member">
+								<img src="/static/img/team/team-2.jpg"class="img-fluid" alt="">
+								<div class="member-info">
+								  <div class="member-info-content">
+									<h4>Walter White</h4>
+									<span>Chief Executive Officer</span>
+									<div class="social">
+											<a href=""><i class="fab fa-facebook-f"></i></a>
+											<a href=""><i class="fab fa-twitter"></i></a>
+											<a href=""><i class="fab fa-linkedin-in"></i></a>
 									</div>
+								  </div>
 								</div>
-								<div class="row appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-									<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-										<a href="#" class="text-decoration-none simple-ajax-popup">
-											<div class="card border-0 custom-box-shadow-1">
-												<svg class="custom-square-1 z-index-0" width="80" height="80">
-													<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
-												</svg>
-												<img class="card-img-top z-index-1" src="/static/img/team/team-2.jpg" alt="" />
-												<div class="card-body">
-													<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Michel Doe</h4>
-													<p class="card-text">CEO & Founder</p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-										<a href="#" class="text-decoration-none simple-ajax-popup">
-											<div class="card border-0 custom-box-shadow-1">
-												<svg class="custom-square-1 z-index-0" width="80" height="80">
-													<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
-												</svg>
-												<img class="card-img-top z-index-1" src="/static/img/team/team-4.jpg" alt="" />
-												<div class="card-body">
-													<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Jessica Doe</h4>
-													<p class="card-text">Architect</p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-										<a href="#" class="text-decoration-none simple-ajax-popup">
-											<div class="card border-0 custom-box-shadow-1">
-												<svg class="custom-square-1 z-index-0" width="80" height="80">
-													<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
-												</svg>
-												<img class="card-img-top z-index-1" src="/static/img/team/team-5.jpg" alt="" />
-												<div class="card-body">
-													<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">John Doe</h4>
-													<p class="card-text">Architect</p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="col-md-6 col-lg-3">
-										<a href="#" class="text-decoration-none simple-ajax-popup">
-											<div class="card border-0 custom-box-shadow-1">
-												<svg class="custom-square-1 z-index-0" width="80" height="80">
-													<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
-												</svg>
-												<img class="card-img-top z-index-1" src="/static/img/team/team-6.jpg" alt="" />
-												<div class="card-body">
-													<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Alice Doe</h4>
-													<p class="card-text">Architect</p>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
+							  </div>
 							</div>
-				</section>
-
+				  
+							<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+							  <div class="member">
+								<img src="/static/img/team/team-4.jpg" class="img-fluid" alt="">
+								<div class="member-info">
+								  <div class="member-info-content">
+									<h4>Sarah Jhonson</h4>
+									<span>Product Manager</span>
+									<div class="social">
+											<a href=""><i class="fab fa-facebook-f"></i></a>
+											<a href=""><i class="fab fa-twitter"></i></a>
+											<a href=""><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+				  
+							<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+							  <div class="member">
+								<img src="/static/img/team/team-5.jpg" class="img-fluid" alt="">
+								<div class="member-info">
+								  <div class="member-info-content">
+									<h4>William Anderson</h4>
+									<span>CTO</span>
+									<div class="social">
+											<a href=""><i class="fab fa-facebook-f"></i></a>
+											<a href=""><i class="fab fa-twitter"></i></a>
+											<a href=""><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+				  
+							<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+							  <div class="member">
+								<img src="/static/img/team/team-6.jpg" class="img-fluid" alt="">
+								<div class="member-info">
+								  <div class="member-info-content">
+									<h4>Amanda Jepson</h4>
+									<span>Accountant</span>
+									<div class="social">
+									  <a href=""><i class="fab fa-facebook-f"></i></a>
+									  <a href=""><i class="fab fa-twitter"></i></a>
+									  <a href=""><i class="fab fa-linkedin-in"></i></a>
+									  
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>
+				  
+						  </div>
+				  
+						</div>
+					  </section><!-- #team -->
 				
 				<section class="section section-height-4 bg-light border-0 m-0" id="ourprojects">
 						<div class="container container-xl">
@@ -769,7 +963,7 @@
 								<div class="card custom-card-style-1 h-100">
 									<div class="card-body">
 										<a href="demo-architecture-interior.html#" class="text-decoration-none">
-											<img src="/static/img/logo.jpg" class="img-fluid pb-2 mt-3 mb-4" width="153" height="53" alt="Demo Architecture & Interior Design" />
+											<img src="/static/img/karinilogo.png" class="img-fluid pb-2 mt-3 mb-4" width="153" height="53" alt="Demo Architecture & Interior Design" />
 										</a>
 										<h3 class="text-color-primary font-weight-bold text-transform-none text-8 line-height-1 pr-5 mb-4">Karini</h3>
 										<ul class="list list-icons list-icons-sm">
@@ -954,6 +1148,16 @@ $('.navbar .dropdown').on('hidden.bs.dropdown', function () {
 });
 
 		</script>
+		<script>
+				$(document).ready(function(){
+				  $('ul.dropdown-menu a.test').on("click", function(e){
+					$(this).next('ul').toggle();
+					e.stopPropagation();
+					e.preventDefault();
+				  });
+				});
+				</script>
+
 		
 	</body>
 </html>
