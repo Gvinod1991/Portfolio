@@ -54,6 +54,52 @@
 
 		<!-- Head Libs -->
 		<script src="/static/vendor/modernizr/modernizr.min.js"></script>
+		<style>
+			.text-4{
+				font-size:15px !important;
+			}
+			#map { 
+        height: 400px; 
+        width: 100%; 
+       } 
+	   .navbar .dropdown-toggle, .navbar .dropdown-menu a {
+			cursor: pointer;
+		
+		}
+
+		.navbar .dropdown-item.active, .navbar .dropdown-item:active {
+			color: inherit;
+			text-decoration: none;
+			background-color: inherit;
+		}
+
+		.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+			color: #16181b;
+			text-decoration: none;
+			background-color: #e2e2e2;
+		}
+
+		@media (min-width: 767px) {
+			.navbar .dropdown-toggle:not(.nav-link)::after {
+				display: inline-block;
+				width: 0;
+				height: 0;
+				margin-left: .5em;
+				vertical-align: 0;
+				border-bottom: .3em solid transparent;
+				border-top: .3em solid transparent;
+				border-left: .3em solid;
+			}
+		}
+		.mr-auto{
+    		padding-left: 14em !important;
+		}
+		.nav-link{
+			color: #16181b !important;
+		}
+
+		</style>
+		
 
 	</head>
 	<body data-target="#header" data-spy="scroll" data-offset="100">
@@ -62,87 +108,85 @@
 			<div class="sticky-wrapper sticky-wrapper-transparent sticky-wrapper-effect-1 sticky-wrapper-effect-1-dark sticky-wrapper-border-bottom" data-plugin-sticky data-plugin-options="{'minWidth': 0, 'stickyStartEffectAt': 100, 'padding': {'top': 0}}">
 				<div class="sticky-body">
 					<div class="container container-xl">
-						<div class="row justify-content-between align-items-center">
-							<div class="col-auto">
-								<div class="py-2">
-									<a href="#">
-										<img alt="Porto" width="153" height="83" src="/static/img/logo.jpg">
-									</a>
+							<div class="navbar navbar-expand-md " role="navigation">
+									<a class="navbar-brand" href="#"><img alt="Porto" width="153" height="83" src="/static/img/logo.jpg"></a>
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+										<!-- <span class="navbar-toggler-icon"></span> -->
+										<i class="fa fa-bars" aria-hidden="true"></i>
+									</button>
+									<div class="collapse navbar-collapse" id="navbarCollapse">
+										<ul class="navbar-nav mr-auto">
+											<li class="nav-item active">
+												<a class="nav-link"  href="#home" style="color:#FEA45A !important">Home</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link"  href="#whoweare">About Us</a>
+											</li>
+											<li class="nav-item dropdown">
+												<a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Ventures</a>
+												<ul class="dropdown-menu" aria-labelledby="dropdown2">
+														<li class="dropdown-item dropdown">
+																<a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Automobiles</a>
+																<ul class="dropdown-menu" aria-labelledby="dropdown2-1">
+																	<li class="dropdown-item" ><a href="http://www.royalmahindra.com" target="_blank" class="nav-link">Royal Motors Mahindra</a></li>
+																	<li class="dropdown-item" ><a href="http://www.mukeshhyundai.com" target="_blank" class="nav-link">Mukesh Hyundai</a></li>
+																	<li class="dropdown-item" ><a href="https://www.dealer.india.ford.com" target="_blank" class="nav-link">Kaikan Ford</a></li>
+																	<li class="dropdown-item" ><a href="#" class="nav-link">MG Motors</a></li>
+																	<li class="dropdown-item" ><a href="https://m.triumphmotorcycles.in/dealers/india/mukesh-triumph" target="_blank" class="nav-link">Mukesh Triumph</a></li>
+																	<li class="dropdown-item" ><a href=" https://www.mahindrafirstchoice.com/dealer/detail/kolkata/kolkata/royal-motors-(prop.-auto-carriage-pvt-ltd)" target="_blank" class="nav-link">Used car</a></li>
+																</ul>
+															</li>
+															<li class="dropdown-item dropdown">
+																	<a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Education</a>
+																	<ul class="dropdown-menu" aria-labelledby="dropdown2-1">
+																		<li class="dropdown-item" ><a href="http://www.mtaedu.in" target="_blank" class="nav-link">Mukesh Training Academy</a></li>
+																		<li class="dropdown-item" ><a href="https://www.frostees.in" target="_blank" class="nav-link">Frostees India Pvt. Ltd</a></li>
+																	
+																	</ul>
+																</li>
+																<li class="dropdown-item dropdown">
+																		<a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hospitality</a>
+																		<ul class="dropdown-menu" aria-labelledby="dropdown2-1">
+																			<li class="dropdown-item" ><a href="http://www.orientalbistro.in" target="_blank" class="nav-link">Oriental Bistro</a></li>
+																			<li class="dropdown-item" ><a href="#" target="_blank" class="nav-link">Pizza hut</a></li>
+																			<li class="dropdown-item" ><a href="http://foodiesworld.in" target="_blank" class="nav-link">Foodies world</a></li>
+																			<li class="dropdown-item" ><a href="#" target="_blank" class="nav-link">Nandini Milk</a></li>
+																		</ul>
+																	</li>
+																	<li class="dropdown-item dropdown">
+																			<a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services and Spare Parts</a>
+																			<ul class="dropdown-menu" aria-labelledby="dropdown2-1">
+																				<li class="dropdown-item" ><a href="https://mukesh.hyundaimotor.in/genuine-parts" target="_blank" class="nav-link">Hyundai</a></li>
+																				<li class="dropdown-item" ><a href="#" target="_blank" class="nav-link">Ford</a></li>
+																				<li class="dropdown-item" ><a href="#" target="_blank" class="nav-link">Mahindra</a></li>
+																				<li class="dropdown-item" ><a href="#" target="_blank" class="nav-link">Triumph</a></li>
+																				<li class="dropdown-item" ><a href="#" target="_blank" class="nav-link">MG Motors</a></li>
+																			</ul>
+																		</li>
+												</ul>
+											</li>
+											<li class="nav-item">
+													<a class="nav-link" href="#ourservices">Our Services</a>
+											</li>
+											<li class="nav-item">
+													<a class="nav-link" href="#ourprojects">Gallery</a>
+											</li>
+											<li class="nav-item">
+													<a class="nav-link" href="#ourteam">Our Team</a>
+											</li>
+											<li class="nav-item">
+													<a class="nav-link" href="#ouradvisors">Our Advisors</a>
+											</li>
+											<li class="nav-item">
+													<a class="nav-link" href="#contactus">Contact Us</a>
+											</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="col-auto text-right d-flex align-items-center justify-content-end">
-								
-								<ul class="social-icons social-icons-clean social-icons-icon-light d-none d-md-inline-block mx-4">
-									<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a></li>
-									<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
-									<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-								</ul>
-								<button class="hamburguer-btn hamburguer-btn-light" data-set-active="false">
-									<span class="hamburguer">
-										<span></span>
-										<span></span>
-										<span></span>
-									</span>
-								</button>
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<header id="header" class="side-header-overlay-full-screen side-header-hide" data-plugin-options="{'stickyEnabled': false}">
-
-				<button class="hamburguer-btn hamburguer-btn-light hamburguer-btn-side-header hamburguer-btn-side-header-overlay active" data-set-active="false">
-					<span class="close">
-						<span></span>
-						<span></span>
-					</span>
-				</button>
-
-				<div class="header-body d-flex h-100">
-					<div class="header-column flex-row flex-lg-column justify-content-center h-100">
-						<div class="header-container container d-flex h-100">
-							<div class="header-row header-row-side-header flex-row h-100 pb-5">
-								<div class="side-header-scrollable scrollable colored-slider h-50" data-plugin-scrollable>
-									<div class="scrollable-content">
-										<div class="header-nav header-nav-light-text header-nav-links header-nav-links-side-header header-nav-links-vertical header-nav-links-vertical-expand header-nav-click-to-open align-self-start">
-											<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-4 header-nav-main-sub-effect-1">
-												<nav>
-													<ul class="nav nav-pills" id="mainNav">
-														<li class="dropdown">
-															<a class="dropdown-item active" data-hash data-hash-offset="95" href="#home">Home</a>
-														</li>
-														<li class="dropdown">
-															<a class="dropdown-item" data-hash data-hash-offset="95" href="#whoweare">About Us</a>
-														</li>
-														<li class="dropdown">
-															<a class="dropdown-item" data-hash data-hash-offset="95" href="#ourservices">Our Services</a>
-														</li>
-														<li class="dropdown">
-															<a class="dropdown-item" data-hash data-hash-offset="95" href="#ourprojects">Gallery</a>
-														</li>
-														<li class="dropdown">
-															<a class="dropdown-item" data-hash data-hash-offset="95" href="#whyhireus">Ventures</a>
-														</li>
-														
-														<li class="dropdown">
-															<a class="dropdown-item" data-hash data-hash-offset="95" href="#ourteam">Our Team</a>
-														</li>
-														<li class="dropdown">
-															<a class="dropdown-item" data-hash data-hash-offset="95" href="#contactus">Contact Us</a>
-														</li>
-													</ul>
-												</nav>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-
 			<div role="main" class="main">
 					<div class="slider-container rev_slider_wrapper" style="height: 100vh;" id="home">
 					<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'sliderLayout': 'fullscreen', 'delay': 9000, 'gridwidth': 1630, 'gridheight': 800, 'responsiveLevels': [4096,1200,992,500], 'parallax': { 'type': 'mouse', 'origo': 'enterpoint', 'speed': 1000, 'levels': [2,3,4,5,6,7,8,9,12,50], 'disable_onmobile': 'on' }}">
@@ -330,24 +374,24 @@
 					</div>
 				</section>
 
-				<div class="container container-xl custom-negative-margin-top z-index-2 position-relative">
+				<div class="container-fluid container-xl custom-negative-margin-top z-index-2 position-relative">
 					<div class="row align-items-center justify-content-center">
-					<div class="col-lg-8 col-xl-4 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
+					<div class="col-lg-8 col-xl-3 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
 							<div class="card border-0 custom-box-shadow-1">
 								<div class="card-body text-center mt-4">
 									<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0" data-plugin-options="{'items':1, 'nav': true, 'dots': false}">
 										<div class="text-center px-5">
-											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">50</span>
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Automobiles</span>
 											<p class="text-4 custom-responsive-m-p-x">Kaikan Ford</p>
 											<img src="/static/img/mta_logo.png" />
 										</div>
 										<div class="text-center px-5">
-											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">12</span>
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Automobiles</span>
 											<p class="text-4 custom-responsive-m-p-x">Mukesh Triumph </p>
 											<img src="/static/img/mta_logo.png" />
 										</div>
 										<div class="text-center px-5">
-											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">15</span>
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Automobiles</span>
 											<p class="text-4 custom-responsive-m-p-x">Mukesh Hyundai</p>
 											<img src="/static/img/mta_logo.png" />
 										</div>
@@ -356,22 +400,22 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-8 col-xl-4 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
+						<div class="col-lg-8 col-xl-3 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
 							<div class="card border-0 custom-box-shadow-1">
 								<div class="card-body text-center mt-4">
 									<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0" data-plugin-options="{'items':1, 'nav': true, 'dots': false}">
 										<div class="text-center px-5">
-											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">50</span>
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Education</span>
 											<p class="text-4 custom-responsive-m-p-x">Kaikan Ford</p>
 											<img src="/static/img/mta_logo.png" />
 										</div>
 										<div class="text-center px-5">
-											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">12</span>
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Education</span>
 											<p class="text-4 custom-responsive-m-p-x">Mukesh Triumph </p>
 											<img src="/static/img/mta_logo.png" />
 										</div>
 										<div class="text-center px-5">
-											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">15</span>
+											<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Education</span>
 											<p class="text-4 custom-responsive-m-p-x">Mukesh Hyundai</p>
 											<img src="/static/img/mta_logo.png" />
 										</div>
@@ -380,22 +424,46 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-8 col-xl-4 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
+						<div class="col-lg-8 col-xl-3 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-5">
 								<div class="card border-0 custom-box-shadow-1">
 									<div class="card-body text-center mt-4">
 										<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0" data-plugin-options="{'items':1, 'nav': true, 'dots': false}">
 											<div class="text-center px-5">
-													<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">50</span>
+													<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Hospitality</span>
 													<p class="text-4 custom-responsive-m-p-x">Kaikan Ford</p>
 													<img src="/static/img/mta_logo.png" />
 											</div>
 											<div class="text-center px-5">
-												<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">12</span>
+												<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Hospitality</span>
 												<p class="text-4 custom-responsive-m-p-x">Mukesh Triumph </p>
 												<img src="/static/img/mta_logo.png" />
 											</div>
 											<div class="text-center px-5">
-												<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1">15</span>
+												<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Hospitality</span>
+												<p class="text-4 custom-responsive-m-p-x">Mukesh Hyundai</p>
+												<img src="/static/img/mta_logo.png" />
+											</div>
+										</div>
+										<a data-hash data-hash-offset="95" href="#" class="btn btn-dark btn-outline font-weight-extra-bold text-3 px-5 py-3 border-width-4 custom-btn-pos-1 custom-btn-style-1">View More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-8 col-xl-3 order-1 order-xl-3 mx-lg-5 mx-xl-0 mb-4">
+								<div class="card border-0 custom-box-shadow-1">
+									<div class="card-body text-center mt-4">
+										<div class="owl-carousel owl-theme nav-style-1 nav-dark custom-nav-size-1 mb-0" data-plugin-options="{'items':1, 'nav': true, 'dots': false}">
+											<div class="text-center px-5">
+													<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Services and Spare Parts</span>
+													<p class="text-4 custom-responsive-m-p-x">Kaikan Ford</p>
+													<img src="/static/img/mta_logo.png" />
+											</div>
+											<div class="text-center px-5">
+												<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Services and Spare Parts</span>
+												<p class="text-4 custom-responsive-m-p-x">Mukesh Triumph </p>
+												<img src="/static/img/mta_logo.png" />
+											</div>
+											<div class="text-center px-5">
+												<span class="text-color-primary font-weight-bold custom-plus line-height-2 custom-text-size-1" style="font-size:19px;">Services and Spare Parts</span>
 												<p class="text-4 custom-responsive-m-p-x">Mukesh Hyundai</p>
 												<img src="/static/img/mta_logo.png" />
 											</div>
@@ -406,10 +474,8 @@
 							</div>	
 					</div>
 				</div>
-
-				
-				<section class="section section-height-4 border-0 m-0" id="ourteam">
-					<div class="container container-xl">
+				<section class="section section-height-4 border-0 m-0" id="ourteam" style="margin-bottom:-100px !important;">
+					<div class="container container-xl" >
 						<div class="row justify-content-center">
 							<div class="col-lg-9 col-xl-6 text-center">
 								
@@ -477,7 +543,80 @@
 							</div>
 						</div>
 					</div>
+					
 				</section>
+				<section class="section section-height-4 border-0 m-0"  id="ouradvisors" >
+						<div class="container container-xl ">
+								<div class="row justify-content-center">
+									<div class="col-lg-9 col-xl-6 text-center">
+										
+										<div class="overflow-hidden mb-3">
+											<h2 class="text-color-dark font-weight-bold pb-2 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="250">Our Advisors</h2>
+										</div>
+									</div>
+								</div>
+								<div class="row appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+									<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+										<a href="#" class="text-decoration-none simple-ajax-popup">
+											<div class="card border-0 custom-box-shadow-1">
+												<svg class="custom-square-1 z-index-0" width="80" height="80">
+													<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
+												</svg>
+												<img class="card-img-top z-index-1" src="/static/img/team/team-2.jpg" alt="" />
+												<div class="card-body">
+													<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Michel Doe</h4>
+													<p class="card-text">CEO & Founder</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+										<a href="#" class="text-decoration-none simple-ajax-popup">
+											<div class="card border-0 custom-box-shadow-1">
+												<svg class="custom-square-1 z-index-0" width="80" height="80">
+													<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
+												</svg>
+												<img class="card-img-top z-index-1" src="/static/img/team/team-4.jpg" alt="" />
+												<div class="card-body">
+													<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Jessica Doe</h4>
+													<p class="card-text">Architect</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+										<a href="#" class="text-decoration-none simple-ajax-popup">
+											<div class="card border-0 custom-box-shadow-1">
+												<svg class="custom-square-1 z-index-0" width="80" height="80">
+													<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
+												</svg>
+												<img class="card-img-top z-index-1" src="/static/img/team/team-5.jpg" alt="" />
+												<div class="card-body">
+													<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">John Doe</h4>
+													<p class="card-text">Architect</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-md-6 col-lg-3">
+										<a href="#" class="text-decoration-none simple-ajax-popup">
+											<div class="card border-0 custom-box-shadow-1">
+												<svg class="custom-square-1 z-index-0" width="80" height="80">
+													<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
+												</svg>
+												<img class="card-img-top z-index-1" src="/static/img/team/team-6.jpg" alt="" />
+												<div class="card-body">
+													<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Alice Doe</h4>
+													<p class="card-text">Architect</p>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+				</section>
+
+				
 				<section class="section section-height-4 bg-light border-0 m-0" id="ourprojects">
 						<div class="container container-xl">
 							<div class="row justify-content-center">
@@ -638,6 +777,7 @@
 												<i class="fas fa-angle-right custom-text-color-grey-1"></i> <strong class="font-weight-normal">Address:</strong> Frost House, PP-101, Nazrul Islam Avenue ,(VIP Road),Krishnapur, Kolkata, West Bengal - 700 059
 											</li>
 											<li class="text-color-light font-weight-light">
+												
 												<i class="fas fa-angle-right custom-text-color-grey-1"></i> <strong class="font-weight-normal">Phone:</strong><a href="#" class="link-hover-style-1 ml-1"> +91 7640 89781</a>
 											</li>
 										</ul>
@@ -647,9 +787,10 @@
 							<div class="col-lg-7 col-xl-4 order-1 order-xl-2 mb-4 mb-xl-0">
 								<div class="card custom-card-style-1 h-100 opacity-10 py-lg-5 py-xl-0" data-appear-animation="customBorderColored" data-appear-animation-delay="500" data-plugin-options="{'accY': -500}">
 									<div class="card-body d-flex justify-content-center flex-column text-center">
-										<span class="text-color-light text-4 mb-3">CALL US NOW</span>
+										<!-- <span class="text-color-light text-4 mb-3">CALL US NOW</span>
 										<a href="tel:+1234567890" class="text-decoration-none text-color-light font-weight-bold line-height-2 text-11 opacity-10" data-appear-animation="customTextColored" data-appear-animation-delay="500" data-plugin-options="{'accY': -200}">+91-7640 89781</a>
-										<a href="tel:+1234567890" class="text-decoration-none text-color-light font-weight-bold line-height-2 text-9">+91-7640 89781</a>
+										<a href="tel:+1234567890" class="text-decoration-none text-color-light font-weight-bold line-height-2 text-9">+91-7640 89781</a> -->
+										<div id="map"></div> 
 									</div>
 								</div>
 							</div>
@@ -712,6 +853,24 @@
 			</footer>
 
 		</div>
+		<script> 
+				function initMap() { 
+				  var uluru = {lat: 28.501859, lng: 77.410320}; 
+				  var map = new google.maps.Map(document.getElementById('map'), { 
+					zoom: 4, 
+					center: uluru 
+				  }); 
+				  var marker = new google.maps.Marker({ 
+					position: uluru, 
+					map: map 
+				  }); 
+				} 
+			  </script> 
+			  <script async defer 
+			  src= 
+		  "https://maps.googleapis.com/maps/api/js?key= 
+		  AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap"> 
+			  </script> 
 
 		<!-- Vendor -->
 		<script src="/static/vendor/jquery/jquery.min.js"></script>		
@@ -763,6 +922,38 @@
 			ga('send', 'pageview');
 		</script>
 		<script src="/static/master/analytics/analytics.js"></script>
+		<script>
+			$(document).ready(function () {
+
+$('.navbar .dropdown-item').on('click', function (e) {
+	var $el = $(this).children('.dropdown-toggle');
+	var $parent = $el.offsetParent(".dropdown-menu");
+	$(this).parent("li").toggleClass('open');
+
+	if (!$parent.parent().hasClass('navbar-nav')) {
+		if ($parent.hasClass('show')) {
+			$parent.removeClass('show');
+			$el.next().removeClass('show');
+			$el.next().css({"top": -999, "left": -999});
+		} else {
+			$parent.parent().find('.show').removeClass('show');
+			$parent.addClass('show');
+			$el.next().addClass('show');
+			$el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
+		}
+		e.preventDefault();
+		e.stopPropagation();
+	}
+});
+
+$('.navbar .dropdown').on('hidden.bs.dropdown', function () {
+	$(this).find('li.dropdown').removeClass('show open');
+	$(this).find('ul.dropdown-menu').removeClass('show open');
+});
+
+});
+
+		</script>
 		
 	</body>
 </html>
