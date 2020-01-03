@@ -9,6 +9,7 @@ html {
 	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
 	-webkit-font-smoothing: antialiased;
+	scroll-behavior: smooth;
 }
 
 body {
