@@ -87,7 +87,9 @@
 														<li class="dropdown-item dropdown">
 																<a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Automobiles</a>
 																<ul class="dropdown-menu" aria-labelledby="dropdown2-1">
-																	<li class="dropdown-item" ><a href="http://www.royalmahindra.com" target="_blank" class="nav-link">Royal Motors Mahindra</a></li>
+																	<li class="dropdown-item" >
+																		<a href="http://www.royalmahindra.com" target="_blank" class="nav-link" >Royal Motors Mahindra</a>
+																	</li>
 																	<li class="divider"></li>
 																	<li class="dropdown-item" ><a href="http://www.mukeshhyundai.com" target="_blank" class="nav-link">Mukesh Hyundai</a></li>
 																	<li class="divider"></li>
@@ -1044,7 +1046,7 @@
 													<textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" placeholder="Message" name="message" id="message" required></textarea>
 												</div>
 											</div>
-											<input type="submit" value="Send Message" class="btn btn-dark text-2 font-weight-bold btn-px-5 py-3 position-absolute" data-loading-text="Loading..." style="bottom: -30px; right: 25px;">
+											<input type="submit" value="Send Message" class="btn btn-dark text-2 font-weight-bold btn-px-5 py-3 position-absolute" data-loading-text="Loading...">
 										</form>
 
 									</div>
@@ -1060,7 +1062,7 @@
 				<div class="container container-xl">
 					<div class="row justify-content-between">
 						<div class="col-auto">
-							<p class="text-color-light font-weight-light opacity-8 mb-0" style="color:#0c214e!important;font-size:17px;	">Copyrights © 2019 All Rights Reserved by Mukesh Training Academy</p>
+							<p class="text-color-light font-weight-light opacity-8 mb-0" style="color:#0c214e!important;font-size:17px;	">Copyrights © 2019 All Rights Reserved by Karini</p>
 						</div>
 						<div class="col-auto text-right">
 
@@ -1157,14 +1159,16 @@ $('.navbar .dropdown-item').on('click', function (e) {
 			$parent.removeClass('show');
 			$el.next().removeClass('show');
 			$el.next().css({"top": -999, "left": -999});
+			
 		} else {
 			$parent.parent().find('.show').removeClass('show');
 			$parent.addClass('show');
 			$el.next().addClass('show');
 			$el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
+			e.preventDefault();
+			e.stopPropagation();
 		}
-		e.preventDefault();
-		e.stopPropagation();
+		
 	}
 });
 
@@ -1180,8 +1184,8 @@ $('.navbar .dropdown').on('hidden.bs.dropdown', function () {
 				$(document).ready(function(){
 				  $('ul.dropdown-menu a.test').on("click", function(e){
 					$(this).next('ul').toggle();
-					e.stopPropagation();
-					e.preventDefault();
+					//e.stopPropagation();
+					//e.preventDefault();
 				  });
 				});
 				</script>
